@@ -1,0 +1,5 @@
+*{box-sizing:border-box} body{margin:0;font-family:system-ui,Segoe UI,Arial}
+main{min-height:100dvh;display:grid;place-items:center;text-align:center;padding:2rem}
+h1{font-size:clamp(2rem,4vw,3rem);margin-bottom:.5rem}
+a{text-decoration:none;border:1px solid #ccc;border-radius:10px;padding:.6rem 1rem}
+a:hover{border-color:#999}
