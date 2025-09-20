@@ -1,17 +1,91 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="tr">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Merhaba Dünya</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <main>
-      <h1>Selam! Bu sürüm otomatik güncellendi 🚀</h1>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PURA – İnsansız Hava Araçları</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white">
+  <!-- Menü -->
+  <header class="fixed top-0 inset-x-0 bg-gray-800/70 backdrop-blur z-50">
+    <nav class="max-w-7xl mx-auto flex justify-between p-4">
+      <div class="font-bold">PURA UAV</div>
+      <div class="space-x-6 hidden md:block">
+        <a href="#ana" class="hover:text-sky-400">Ana Sayfa</a>
+        <a href="#hakkimizda" class="hover:text-sky-400">Hakkımızda</a>
+        <a href="#projeler" class="hover:text-sky-400">Projelerimiz</a>
+        <a href="#araclar" class="hover:text-sky-400">Araçlarımız</a>
+        <a href="#yarismalar" class="hover:text-sky-400">Yarışmalar</a>
+        <a href="#blog" class="hover:text-sky-400">Blog</a>
+        <a href="#sponsorlar" class="hover:text-sky-400">Sponsorlar</a>
+        <a href="#iletisim" class="hover:text-sky-400">İletişim</a>
+      </div>
+    </nav>
+  </header>
 
-      <p>Bu site GitHub → Vercel ile yayınlandı.</p>
-      <a href="https://vercel.com" target="_blank" rel="noreferrer">Vercel</a>
-    </main>
-  </body>
+  <!-- Ana sayfa -->
+  <section id="ana" class="h-screen flex items-center justify-center bg-gradient-to-br from-sky-700 to-emerald-600">
+    <h1 class="text-5xl font-extrabold">İHA Şirketi Web Sitesi</h1>
+  </section>
+
+  <!-- Hakkımızda -->
+  <section id="hakkimizda" class="p-16 bg-gray-800">
+    <h2 class="text-3xl font-bold mb-4">Hakkımızda</h2>
+    <p>Şirketinizin kısa tanıtım metnini buraya yazın.</p>
+  </section>
+
+  <!-- Projeler -->
+  <section id="projeler" class="p-16 bg-gray-900">
+    <h2 class="text-3xl font-bold mb-4">Projelerimiz</h2>
+    <p>Projeleriniz burada listelenecek.</p>
+  </section>
+
+  <!-- Araçlar -->
+  <section id="araclar" class="p-16 bg-gray-800">
+    <h2 class="text-3xl font-bold mb-4">Araçlarımız</h2>
+    <p>Drone modellerinizin bilgilerini buraya ekleyin.</p>
+  </section>
+
+  <!-- Yarışmalar -->
+  <section id="yarismalar" class="p-16 bg-gray-900">
+    <h2 class="text-3xl font-bold mb-4">Katıldığımız Yarışmalar</h2>
+    <ul class="list-disc ml-6">
+      <li>SUAS Maryland</li>
+      <li>Teknofest</li>
+    </ul>
+  </section>
+
+  <!-- Blog -->
+  <section id="blog" class="p-16 bg-gray-800">
+    <h2 class="text-3xl font-bold mb-4">Blog</h2>
+    <p>Burada yazılarınızı paylaşabilirsiniz.</p>
+  </section>
+
+  <!-- Sponsorlar -->
+  <section id="sponsorlar" class="p-16 bg-gray-900">
+    <h2 class="text-3xl font-bold mb-4">Sponsorlarımız</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div class="bg-gray-700 h-20 flex items-center justify-center">Logo</div>
+      <div class="bg-gray-700 h-20 flex items-center justify-center">Logo</div>
+      <div class="bg-gray-700 h-20 flex items-center justify-center">Logo</div>
+      <div class="bg-gray-700 h-20 flex items-center justify-center">Logo</div>
+    </div>
+  </section>
+
+  <!-- İletişim -->
+  <section id="iletisim" class="p-16 bg-gray-800">
+    <h2 class="text-3xl font-bold mb-4">İletişim</h2>
+    <form class="space-y-4 max-w-lg">
+      <input type="text" placeholder="Ad Soyad" class="w-full p-2 rounded text-black"/>
+      <input type="email" placeholder="E-posta" class="w-full p-2 rounded text-black"/>
+      <textarea placeholder="Mesajınız" class="w-full p-2 rounded text-black"></textarea>
+      <button class="px-6 py-2 bg-sky-500 rounded text-white">Gönder</button>
+    </form>
+  </section>
+
+  <footer class="p-6 bg-black text-center text-sm text-gray-400">
+    © 2025 PURA UAV – Tüm hakları saklıdır.
+  </footer>
+</body>
 </html>
